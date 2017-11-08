@@ -1,3 +1,4 @@
 language: node_js
 node_js: node
-deploy: app: thawing-beyond-38292
+deploy :
+ app: thawing-beyond-38292
