@@ -4,7 +4,6 @@ deploy :
  app: thawing-beyond-38292
 provider: heroku
 api_key: bobdole
-app: immense-taiga-10545
 on:
   repo: mlnck/Team495
 
