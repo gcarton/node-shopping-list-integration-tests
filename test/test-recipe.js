@@ -10,13 +10,13 @@ chai.use(chaiHttp);
 
 describe('Recipes', function() {
 
-  before(function() {
-    return runServer();
-  });
+  // before(function() {
+  //   return runServer();
+  // });
 
-  after(function() {
-    return closeServer();
-  });
+  // after(function() {
+  //   return closeServer();
+  // });
 
   it('should list recipes on GET', function() {
     // recall that we manually add some recipes to `Recipes`
@@ -27,7 +27,7 @@ describe('Recipes', function() {
     // the state of our database.
     return chai.request(app)
       .get('/recipes')
-      .then(function(res) {
+      .then(function(res){
 
         res.should.have.status(200);
         res.should.be.json;
